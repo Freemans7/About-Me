@@ -1,4 +1,38 @@
-h1 {
+body {
+    background-color: rgb(97, 160, 232);
+}
+* {
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #000;
+}
+.background-img {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Cloud.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+.top-nav {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.pg-link {
+    display: inline-block;
+    margin: 20px;
+}
+.floating {
+    float: right;
+}
+.floating p {
+    margin: 50px;
+}
+.h1 {
     text-align: center;
 }
 .italic {
