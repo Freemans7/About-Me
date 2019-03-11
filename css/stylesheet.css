@@ -140,7 +140,12 @@ p.info-right::first-letter, p.info-left::first-letter {
 ul * {
     text-align: left;
     list-style-type: square;
-    font-size: 20px;
+    font-size: 35px;
+    font-family: 'Tangerine', cursive;
+    text-shadow: 1px 1px;
+}
+ol {
+    font-family: 'Sniglet', cursive;
 }
 .info-right.none::first-letter {
     font-size: 55px;
