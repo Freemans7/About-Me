@@ -2,6 +2,14 @@
     box-sizing: border-box;
     text-align: center;
 }
+html, body {
+    background-color: rgb(182, 69, 44);
+    height: 100%;
+    margin: 0px;
+}
+
+/*___________________________________HEADER____________________________________________________*/
+
 header {
     width: 100%;
     height: 100px;
@@ -32,51 +40,24 @@ header nav a:hover {
     color: rgb(221, 197, 162);
     text-shadow: 5px 5px 5px rgb(0, 0, 0), -3px 6px rgb(182, 69, 44);
 }
+
+/*_____________________________CONTAINER, WRAPPER, PUSH, FOOTER (STICKY FOOTER)____________________*/
+
 .container {
     width: 70%;
     margin: auto;
 
-}
-html, body {
-    background-color: rgb(182, 69, 44);
-    height: 100%;
-    margin: 0px;
 }
 .wrapper{
     min-height: 100%;
     margin-bottom: -100px;
     background-color: rgb(221, 197, 162);
 }
-.wrapper-animation {
-    animation: pulse 5s infinite;
-}
-@keyframes pulse {
-    0% {
-        background-color: rgb(82, 54, 52);
-    }
-    100% {
-        background-color: rgb(182, 69, 44);
-    }
-}
-.left {
-    float: left;
-    width: 25%;
-    background: rgba(182, 69, 44, 0.3);
-}
-.info-right{
-    overflow-y: auto;
-    height: 450px;
-    direction: rtl;
-}
-.info-left{
-    overflow-y: auto;
-    height: 450px;
-    direction: ltr;
-}
-.right {
-    float: left;
-    width: 25%;
-    background: rgba(182, 69, 44, 0.3);
+.push {
+    padding: 5px;
+    clear: both;
+    background: rgb(221, 197, 162);
+    height: 0px;
 }
 .footer {
     padding: 25px;
@@ -88,21 +69,28 @@ html, body {
     font-size: 30px;
     line-height: 0;
 }
-.push {
-    padding: 5px;
-    clear: both;
-    background: rgb(221, 197, 162);
-    height: 0px;
+
+/*____________________________________LEFT, RIGHT, MAIN_____________________________________*/
+
+.left {
+    float: left;
+    width: 25%;
+    background: rgba(182, 69, 44, 0.3);
 }
-p.info-right::first-letter, p.info-left::first-letter {
-    font-size: 80px;
+.info-left{
+    overflow-y: auto;
+    height: 450px;
+    direction: ltr;
 }
-.about-me {
-    font-size: 27px;
-    line-height: 60px;
-    color: rgb(182, 69, 44);
-    font-weight: bold;
-    -webkit-text-stroke: 1px rgb(48, 27, 40);
+.right {
+    float: left;
+    width: 25%;
+    background: rgba(182, 69, 44, 0.3);
+}
+.info-right{
+    overflow-y: auto;
+    height: 450px;
+    direction: rtl;
 }
 .main {
     float:left;
@@ -112,6 +100,30 @@ p.info-right::first-letter, p.info-left::first-letter {
     height: 450px;
     margin: 0 56px;
 }
+
+/*____________________________FIRST LETTER AND MORE FONTS___________________________________________*/
+
+p.info-right::first-letter, p.info-left::first-letter {
+    font-size: 80px;
+}
+.info-right.none::first-letter {
+    font-size: 55px;
+}
+.about-me {
+    font-size: 27px;
+    line-height: 60px;
+    color: rgb(182, 69, 44);
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(48, 27, 40);
+}
+.facts {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 100px;
+}
+
+/*__________________________________________IMAGES___________________________________________*/
+
 .picture-of-me-one {
     width: 300px;
     transform: rotate(90deg);
@@ -131,11 +143,9 @@ p.info-right::first-letter, p.info-left::first-letter {
     width: 50%;
     float: left;
 }
-.facts {
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 100px;
-}
+
+/*_____________________________________________LISTS__________________________________________*/
+
 ul * {
     text-align: left;
     list-style-type: square;
@@ -146,8 +156,11 @@ ul * {
 ol {
     font-family: 'Sniglet', cursive;
 }
-.info-right.none::first-letter {
-    font-size: 55px;
+
+/*_______________________________________ANIMATION_____________________________________*/
+
+.wrapper-animation {
+    animation: pulse 5s infinite;
 }
 .einstein, nav.fun, .spin {
     animation: rotation 8s infinite linear;
@@ -159,4 +172,12 @@ ol {
   to {
     transform: rotate(359deg);
   }
+}
+@keyframes pulse {
+    0% {
+        background-color: rgb(82, 54, 52);
+    }
+    100% {
+        background-color: rgb(182, 69, 44);
+    }
 }
