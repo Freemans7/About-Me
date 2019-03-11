@@ -84,10 +84,10 @@ html, body {
     background: rgb(221, 197, 162);
     height: 0px;
 }
-p.info::first-letter {
+p.info-right::first-letter, p.info-left::first-letter {
     font-size: 80px;
 }
-.new-about-me {
+.about-me {
     font-size: 27px;
     line-height: 60px;
     color: rgb(182, 69, 44);
@@ -101,4 +101,20 @@ p.info::first-letter {
     overflow-y: hidden;
     height: 450px;
     margin: 0 56px;
+}
+.picture-of-me-one {
+    width: 300px;
+    transform: rotate(90deg);
+    margin: 40px;
+    
+}
+.picture-of-me-small {
+    transform: rotate(90deg);
+    width: 200px;
+    float: left;
+}
+.facts {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 100px;
 }
