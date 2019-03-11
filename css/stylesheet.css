@@ -49,8 +49,8 @@ header nav a:hover {
 
 }
 .wrapper{
-    min-height: 100%;
-    margin-bottom: -100px;
+    clear: both;
+    overflow: hidden;
     background-color: rgb(221, 197, 162);
 }
 .push {
@@ -75,30 +75,32 @@ header nav a:hover {
 .left {
     float: left;
     width: 25%;
+    height: 80vh;
     background: rgba(182, 69, 44, 0.3);
 }
 .info-left{
     overflow-y: auto;
-    height: 450px;
+    
     direction: ltr;
 }
 .right {
     float: left;
     width: 25%;
+    height: 80vh;
     background: rgba(182, 69, 44, 0.3);
 }
 .info-right{
     overflow-y: auto;
-    height: 450px;
+
     direction: rtl;
 }
 .main {
     float:left;
     text-align: center;
-    width: 40%;
+    width: 50%;
     overflow-y: hidden;
     height: 450px;
-    margin: 0 56px;
+    padding: 0 56px;
 }
 
 /*____________________________FIRST LETTER AND MORE FONTS___________________________________________*/
