@@ -48,6 +48,17 @@ html, body {
     margin-bottom: -100px;
     background-color: rgb(221, 197, 162);
 }
+.wrapper-animation {
+    animation: pulse 5s infinite;
+}
+@keyframes pulse {
+    0% {
+        background-color: rgb(82, 54, 52);
+    }
+    100% {
+        background-color: rgb(182, 69, 44);
+    }
+}
 .left {
     float: left;
     width: 25%;
@@ -113,8 +124,24 @@ p.info-right::first-letter, p.info-left::first-letter {
     width: 200px;
     float: left;
 }
+.feynman {
+    width: 50%;
+    float: right;
+}
+.gates {
+    width: 50%;
+    float: left;
+}
 .facts {
     font-weight: bold;
     font-size: 25px;
     line-height: 100px;
+}
+ul * {
+    text-align: left;
+    list-style-type: square;
+    font-size: 20px;
+}
+.info-right.none::first-letter {
+    font-size: 55px;
 }
