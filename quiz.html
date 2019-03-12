@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>about-me</title>
+</head>
+<body>
+<header>
+    <section class="container">
+    <h1 class="logo">Freeman</h1>
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="aboutmetwo.html">Lists</a>
+        <a href="aboutmethree.html">Animation</a>
+        <a href="aboutmefour.html">Video</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="">Link</a>
+    </nav>
+    </section>
+</header>
+    <section class="wrapper">
+    
+    <section class="push">
+        <aside class="left">
+            <p class="info-left">
+                Welcome to my page, I'm Freeman R. A. Schlichting. 
+                Here are a few... <span class="facts">facts-about-me</span>
+            </p>
+        </aside>
+        <main class="main">
+            <p class="about-me">about-me-quiz</p>
+            <img class="picture-of-me-one" src="images/picture-of-me-one.jpeg" alt="Freeman R. A. Schlichting"
+                title="Freeman R. A. Schlichting" width="100%" height="auto">
+        </main>
+        <aside class="right">
+            <p class="info-right">
+                <!--Text would go here-->
+            </p>
+        </aside>
+    </section>
+    </section>
+    <footer class="footer">
+        Text here
+    </footer>
+    <script>  
+        'use strict';
+        var userName = prompt('What is your name?');
+        console.log('The user said their name is:  ' + userName);
+
+        alert('Hello, ' + userName + '! ' +
+        ' I\'m going to ask you some questions about Freeman.  Please answer with a \'Yes\' or a \'No\'.');
+
+        var questionOne = prompt('What do you think ' + userName + ', does Freeman know how to juggle?');
+        console.log('Does Freeman know how to juggle?  ' + questionOne);
+
+        if (questionOne.toLowerCase() === 'n' || questionOne.toUpperCase() === 'NO') {
+            alert(userName + ' that is incorrect!  Freeman know\'s how to juggle.');
+        } else if (questionOne.toUpperCase() === 'Y' || questionOne.toUpperCase() === 'YES') {
+            alert(userName + ' that is correct!  Freeman know\'s how to juggle.');
+        } else {
+            alert(userName + ', please answer with a \'Yes\' or \'No\'.');
+            alert('Freeman know\'s how to juggle.');
+        }
+
+        var questionTwo = prompt(userName + ', has Freeman been to Italy?');
+        console.log('Has Freeman been to Italy?  ' + questionTwo);
+        if (questionTwo.toLowerCase() === 'n' || questionTwo.toUpperCase() === 'NO') {
+            alert(userName + ', that is correct!  Freeman has been to Europe, but not to Italy.');
+        } else if (questionTwo.toUpperCase() === 'Y' || questionTwo.toUpperCase() === 'YES') {
+            alert(userName + ', that is incorrect!  Freeman has been to Europe, but not to Italy.');
+        } else {
+            alert(userName + ', please answer with a \'Yes\' or \'No\'.');
+            alert('Freeman has been to Europe, but not to Italy.');
+        }
+
+        var questionThree = prompt(userName + ', does Freeman know how to snowboard?');
+        console.log(userName + ', does Freeman know how to snowboard?  ' + questionThree);
+        if (questionThree.toLowerCase() === 'n' || questionThree.toUpperCase() === 'NO') {
+            alert(userName + ', that is incorrect!  Freeman like\'s to go snowboarding!');
+        } else if (questionThree.toUpperCase() === 'Y' || questionThree.toUpperCase() === 'YES') {
+            alert(userName + ', that is correct!  Freeman like\'s to go snowboarding.');
+        } else {
+            alert(userName, ', please answer with a \'Yes\' or \'No\'.');
+            alert('Freeman like\'s to go snowboarding.');
+        }
+
+        var questionFour = prompt(userName + ', is Freeman a Mac user?');
+        console.log('Is Freeman a Mac user?   ' + questionFour);
+        if (questionFour.toLowerCase() === 'n' || questionFour.toUpperCase() === 'NO') {
+            alert('Freeman does have a Mac but, ' + userName + ', Freeman is a Windows user primarily');
+        } else if (questionFour.toUpperCase() === 'Y' || questionFour.toUpperCase() === 'YES') {
+            alert('Freeman does have a Mac but, ' + userName + ', Freeman is a Windows user primarily');
+        } else {
+            alert(userName + 'Please answer with a \'Yes\' or \'No\'.');
+            alert('Freeman does have a Mac, but Freeman is a Windows user primarily');
+        }
+
+        var questionFive = prompt(userName + ', is Freeman\'s favorite color orange?');
+        console.log('Is Freeman\'s favorite color orange?   ' + questionFive);
+        if (questionFive.toLowerCase() === 'n' || questionFive.toUpperCase() === 'NO') {
+            alert('That is incorrect, ' + userName + '!  Freeman\'s favorite color is orange.');
+        } else if (questionFour.toUpperCase() === 'Y' || questionFour.toUpperCase() === 'YES') {
+            alert('That is correct, ' + userName + '!  Freeman\'s favorite color is orange.');
+        } else {
+            alert('Please answer with a \'Yes\' or \'No\'.');
+            alert('Freeman does have a Mac, but Freeman is Windows user primarily');
+        }
+    </script>
+</body>
+</html>
