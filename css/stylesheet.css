@@ -147,7 +147,7 @@ p.info-right::first-letter, p.info-left::first-letter {
 
 /*_____________________________________________LISTS__________________________________________*/
 
-ul  {
+ul {
     text-align: left;
     list-style-type: square;
     font-size: 35px;
