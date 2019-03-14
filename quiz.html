@@ -109,12 +109,9 @@
             alert('Please answer with a \'Yes\' or \'No\'.');
             alert('Freeman does have a Mac, but Freeman is Windows user primarily');
         }*/
-
- 
-
-        
-        
+/*
         var numCorrect = 2;
+
         for (var i = 0; i < 4; i++) {
             var numGuess = prompt('Guess a number, please.');
             if (numGuess > numCorrect) {
@@ -130,6 +127,49 @@
             } else 
                 break; 
         }
+*/      
+
+
+var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
+var score = 0;
+
+for (var i = 0; i < 6; i++) {
+    var answer = prompt('Guess a names.  Any name.').toLowerCase();
+    var isCorrect = false;
+    for (var j = 0; j < names.length; j++) {
+        if(answer === names[j]) {
+        console.log(answer);
+        alert('That is correct!');
+        isCorrect = true;
+        score++;
+        break;
+        } 
+    } if (isCorrect == false){
+        console.log(answer);
+            alert('That is incorrect!');
+    } else if (answer === null) {
+            break;
+        } 
+} 
+
+alert('You got ' + score + ' correct!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
