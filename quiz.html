@@ -109,7 +109,7 @@
             alert('Please answer with a \'Yes\' or \'No\'.');
             alert('Freeman does have a Mac, but Freeman is Windows user primarily');
         }*/
-/*
+
         var numCorrect = 2;
 
         for (var i = 0; i < 4; i++) {
@@ -127,8 +127,6 @@
             } else 
                 break; 
         }
-*/      
-
 
 var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
 var score = 0;
@@ -139,20 +137,21 @@ for (var i = 0; i < 6; i++) {
     for (var j = 0; j < names.length; j++) {
         if(answer === names[j]) {
         console.log(answer);
-        alert('That is correct!');
+        alert(names[j] + '  is correct!');
         isCorrect = true;
         score++;
         break;
         } 
     } if (isCorrect == false){
         console.log(answer);
-            alert('That is incorrect!');
+            alert(answer + '  is incorrect!');
+            //null doesn't work now
     } else if (answer === null) {
             break;
         } 
 } 
 
-alert('You got ' + score + ' correct!')
+alert('You got ' + score + '  ' +  + ' correct!')
 
 
 
