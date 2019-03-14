@@ -81,7 +81,6 @@
         /*var questionTwo = prompt(userName + ', has Freeman been to Italy?');
 
         var questionTwo = prompt(userName + ', has Freeman been to Italy?');
->>>>>>> 5aea3db9ef9df2fea5e16757418ead00eef795db
         console.log('Has Freeman been to Italy?  ' + questionTwo);
         if (questionTwo.toLowerCase() === 'n' || questionTwo.toUpperCase() === 'NO') {
             alert(userName + ', that is correct!  Freeman has been to Europe, but not to Italy.');
@@ -126,7 +125,6 @@
         }*/
 
 /*
-
         var numCorrect = 2;
 
         for (var i = 0; i < 4; i++) {
@@ -144,10 +142,7 @@
             } else 
                 break; 
         }
-
-*/      
-
-
+*/
 
 var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
 var score = 0;
@@ -164,7 +159,9 @@ for (var i = 0; i < 6; i++) {
         break;
         } 
     } if (isCorrect == false){
-            console.log(answer);
+        console.log(answer);
+            alert(answer + '  is incorrect!');
+            //null doesn't work now
             alert(answer + '  is incorrect!');
     } else if (answer === null) {
             break;
@@ -173,6 +170,7 @@ for (var i = 0; i < 6; i++) {
 
 
 alert('You got ' + score + '  ' +  + ' correct!')
+
 
 
 
