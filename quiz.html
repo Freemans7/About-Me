@@ -49,18 +49,15 @@
     <script>  
         'use strict';
 
-        /*var userName = prompt('What is your name?');
-
-
-        /*var userName = prompt('What is your name?');
-
-        var userName = prompt('What is your name?');
-
+        var userName;
+        function greetings(){
+        userName = prompt('What is your name?');
         console.log('The user said their name is:  ' + userName);
-
         alert('Hello, ' + userName + '! ' +
         ' I\'m going to ask you some questions about Freeman.  Please answer with a \'Yes\' or a \'No\'.');
-
+        return;
+    }
+        function firstQuestion(){
         var questionOne = prompt('What do you think ' + userName + ', does Freeman know how to juggle?');
         console.log('Does Freeman know how to juggle?  ' + questionOne);
 
@@ -72,14 +69,10 @@
             alert(userName + ', please answer with a \'Yes\' or \'No\'.');
             alert('Freeman know\'s how to juggle.');
         }
+        return;
+    };
 
-*/
-        /*var questionTwo = prompt(userName + ', has Freeman been to Italy?');
-
-
-*/
-        /*var questionTwo = prompt(userName + ', has Freeman been to Italy?');
-
+    function secondQuestion(){
         var questionTwo = prompt(userName + ', has Freeman been to Italy?');
         console.log('Has Freeman been to Italy?  ' + questionTwo);
         if (questionTwo.toLowerCase() === 'n' || questionTwo.toUpperCase() === 'NO') {
@@ -90,7 +83,10 @@
             alert(userName + ', please answer with a \'Yes\' or \'No\'.');
             alert('Freeman has been to Europe, but not to Italy.');
         }
+        return;
+    }
 
+    function thirdQuestion(){
         var questionThree = prompt(userName + ', does Freeman know how to snowboard?');
         console.log(userName + ', does Freeman know how to snowboard?  ' + questionThree);
         if (questionThree.toLowerCase() === 'n' || questionThree.toUpperCase() === 'NO') {
@@ -101,7 +97,10 @@
             alert(userName, ', please answer with a \'Yes\' or \'No\'.');
             alert('Freeman like\'s to go snowboarding.');
         }
+        return;
+    }
 
+    function fourthQuestion(){
         var questionFour = prompt(userName + ', is Freeman a Mac user?');
         console.log('Is Freeman a Mac user?   ' + questionFour);
         if (questionFour.toLowerCase() === 'n' || questionFour.toUpperCase() === 'NO') {
@@ -112,19 +111,24 @@
             alert(userName + 'Please answer with a \'Yes\' or \'No\'.');
             alert('Freeman does have a Mac, but Freeman is a Windows user primarily');
         }
+        return;
+    }
 
+    function fifthQuestion(){
         var questionFive = prompt(userName + ', is Freeman\'s favorite color orange?');
         console.log('Is Freeman\'s favorite color orange?   ' + questionFive);
         if (questionFive.toLowerCase() === 'n' || questionFive.toUpperCase() === 'NO') {
             alert('That is incorrect, ' + userName + '!  Freeman\'s favorite color is orange.');
-        } else if (questionFour.toUpperCase() === 'Y' || questionFour.toUpperCase() === 'YES') {
+        } else if (questionFive.toUpperCase() === 'Y' || questionFive.toUpperCase() === 'YES') {
             alert('That is correct, ' + userName + '!  Freeman\'s favorite color is orange.');
         } else {
             alert('Please answer with a \'Yes\' or \'No\'.');
             alert('Freeman does have a Mac, but Freeman is Windows user primarily');
-        }*/
+        }
+        return;
+    }
 
-/*
+    function sixthQuestion(){
         var numCorrect = 2;
 
         for (var i = 0; i < 4; i++) {
@@ -142,48 +146,60 @@
             } else 
                 break; 
         }
-*/
+        return;
+    }
 
-var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
-var score = 0;
-
-for (var i = 0; i < 6; i++) {
+function seventhQuestion(){
+    var correct=[];
+    var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
+    var score = 0;
+    for (var i = 0; i < 6; i++) {
     var answer = prompt('Guess a names.  Any name.').toLowerCase();
     var isCorrect = false;
-    for (var j = 0; j < names.length; j++) {
-        if(answer === names[j]) {
-        console.log(answer);
-        alert(names[j] + '  is correct!');
-        isCorrect = true;
-        score++;
-        break;
+        for (var j = 0; j < names.length; j++) {
+            if(answer === names[j]) {
+                console.log(answer);
+                alert(names[j] + '  is correct!');
+                correct.push(names[j] + ' ');
+                isCorrect = true;
+                score++;
+                break;
+            } 
+        }   if (isCorrect == false){
+                console.log(answer);
+                alert(answer + '  is incorrect!');
+                //null doesn't work now
+            } else if (answer === null) {
+                    break;
+                } 
         } 
-    } if (isCorrect == false){
-        console.log(answer);
-            alert(answer + '  is incorrect!');
-            //null doesn't work now
-            alert(answer + '  is incorrect!');
-    } else if (answer === null) {
-            break;
-        } 
-} 
 
+        alert('You got these names correct: ' + correct)
+        alert('You got ' + score + ' correct!')
+    return;
+}
 
-alert('You got ' + score + '  ' +  + ' correct!')
+function start(){
+    greetings();
+    firstQuestion();
+    secondQuestion();
+    thirdQuestion();
+    fourthQuestion();
+    fifthQuestion();
+    sixthQuestion();
+    seventhQuestion();
+}
 
-
-
-
-
-
-
-
-
+start();
 
 
 
 
 
+
+
+
+ 
 
     </script>
 </body>
