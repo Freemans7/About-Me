@@ -48,6 +48,9 @@
     </footer>
     <script>  
         'use strict';
+
+        /*var userName = prompt('What is your name?');
+
         var userName = prompt('What is your name?');
         console.log('The user said their name is:  ' + userName);
 
@@ -65,6 +68,9 @@
             alert(userName + ', please answer with a \'Yes\' or \'No\'.');
             alert('Freeman know\'s how to juggle.');
         }
+
+*/
+        /*var questionTwo = prompt(userName + ', has Freeman been to Italy?');
 
         var questionTwo = prompt(userName + ', has Freeman been to Italy?');
         console.log('Has Freeman been to Italy?  ' + questionTwo);
@@ -108,7 +114,51 @@
         } else {
             alert('Please answer with a \'Yes\' or \'No\'.');
             alert('Freeman does have a Mac, but Freeman is Windows user primarily');
-        }*/$
+        }*/
+/*
+        var numCorrect = 2;
+
+        for (var i = 0; i < 4; i++) {
+            var numGuess = prompt('Guess a number, please.');
+            if (numGuess > numCorrect) {
+                alert('TO HIGH');
+                console.log(numGuess);
+            } else if (numGuess < numCorrect) {
+                alert('That is to low.');
+                console.log(numGuess);
+            } else if (numGuess == numCorrect) {
+                console.log(numGuess);
+                alert('That is correct!!');
+                break;
+            } else 
+                break; 
+        }
+*/      
+
+
+var names = ["jeff", "bob", "joe", "john", "terri", "jack", "laura", "josh", "david", "tim"];
+var score = 0;
+
+for (var i = 0; i < 6; i++) {
+    var answer = prompt('Guess a names.  Any name.').toLowerCase();
+    var isCorrect = false;
+    for (var j = 0; j < names.length; j++) {
+        if(answer === names[j]) {
+        console.log(answer);
+        alert('That is correct!');
+        isCorrect = true;
+        score++;
+        break;
+        } 
+    } if (isCorrect == false){
+        console.log(answer);
+            alert('That is incorrect!');
+    } else if (answer === null) {
+            break;
+        } 
+} 
+
+alert('You got ' + score + ' correct!')
 
 
     </script>
